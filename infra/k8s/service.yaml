@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: intuitive-fermi-5195795de1-srv
+  namespace: apps-dev
+spec:
+  selector:
+    app: intuitive-fermi-5195795de1
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 7070
+  type: ClusterIP
